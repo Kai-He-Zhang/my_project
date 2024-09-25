@@ -1,2 +1,2 @@
-# my_project
-研究所推甄個人作品
+# My Project
+在學期間個人作品
