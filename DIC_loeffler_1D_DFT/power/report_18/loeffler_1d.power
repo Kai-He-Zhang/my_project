@@ -1,0 +1,38 @@
+****************************************
+Report : Time Based Power (Cycle Accurate)
+Design : loeffler_1d
+Version: R-2020.09
+Date   : Wed May 29 01:15:00 2024
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+clock_network           2.177e-03    0.0000    0.0000 2.177e-03 (77.20%)  i
+register                1.000e-04 1.863e-04 2.011e-06 2.883e-04 (10.22%)  
+combinational           1.562e-04 1.955e-04 2.990e-06 3.546e-04 (12.58%)  
+sequential                 0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+
+  Net Switching Power          = 3.818e-04   (13.54%)
+  Cell Internal Power          = 2.433e-03   (86.29%)
+  Cell Leakage Power           = 5.001e-06   ( 0.18%)
+                                 ---------
+Total Power                    = 2.820e-03  (100.00%)
+
+X Transition Power             = 7.607e-06
+CAPP Estimated Glitching Power =    0.0000
+
+Peak Power                     = 6.242e-03
+Peak Time                      =      1450
+
+1

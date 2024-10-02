@@ -1,0 +1,70 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : loeffler_1d
+Version: R-2020.09
+Date   : Wed May 29 01:18:53 2024
+****************************************
+
+
+  Startpoint: s15_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s26_reg_11_
+               (rising edge-triggered flip-flop clocked by clk)
+  Last common pin: clk
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.00       0.00
+  s15_reg_0_/CK (QDFFP)                    0.00       0.00 r
+  s15_reg_0_/Q (QDFFP)                     0.45       0.45 f
+  add_73/U1/O (AN2T)                       0.24       0.68 f
+  add_73/U1_1/CO (FA1)                     0.34       1.02 f
+  add_73/U1_2/CO (FA1)                     0.36       1.38 f
+  add_73/U1_3/CO (FA1)                     0.36       1.73 f
+  add_73/U1_4/CO (FA1)                     0.36       2.09 f
+  add_73/U1_5/CO (FA1)                     0.36       2.44 f
+  add_73/U1_6/CO (FA1)                     0.36       2.80 f
+  add_73/U1_7/CO (FA1)                     0.36       3.16 f
+  add_73/U1_8/CO (FA1)                     0.36       3.51 f
+  add_73/U1_9/S (FA1)                      0.35       3.86 f
+  mult_73/U55/O (INV2)                     0.16       4.02 r
+  mult_73/U32/S (FA1)                      0.73       4.75 f
+  mult_73/U42/O (ND2S)                     0.16       4.91 r
+  mult_73/U43/O (ND3)                      0.30       5.21 f
+  mult_73/U7/O (ND2S)                      0.22       5.43 r
+  mult_73/U10/O (ND3)                      0.15       5.58 f
+  mult_73/U82/CO (FA1)                     0.38       5.96 f
+  mult_73/U87/CO (FA1P)                    0.44       6.40 f
+  mult_73/U83/CO (FA1)                     0.36       6.76 f
+  mult_73/U59/CO (FA1P)                    0.44       7.20 f
+  mult_73/U86/S (FA1)                      0.36       7.56 f
+  sub_84/U2_17/CO (FA1S)                   0.54       8.11 f
+  sub_84/U2_18/CO (FA1S)                   0.51       8.62 f
+  sub_84/U2_19/CO (FA1)                    0.43       9.05 f
+  sub_84/U24/O (ND2)                       0.12       9.17 r
+  sub_84/U21/O (ND3)                       0.12       9.29 f
+  sub_84/U20/O (XNR3)                      0.32       9.61 f
+  s26_reg_11_/D (QDFFN)                    0.00       9.61 f
+  data arrival time                                   9.61
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (propagated)         0.00      10.00
+  clock reconvergence pessimism            0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  s26_reg_11_/CK (QDFFN)                              9.90 r
+  library setup time                      -0.13       9.77
+  data required time                                  9.77
+  ---------------------------------------------------------------
+  data required time                                  9.77
+  data arrival time                                  -9.61
+  ---------------------------------------------------------------
+  slack (MET)                                         0.16
+
+
+1

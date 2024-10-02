@@ -1,0 +1,72 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : loeffler_1d
+Version: R-2020.09
+Date   : Wed May 29 01:15:00 2024
+****************************************
+
+
+  Startpoint: s23_reg_0_ (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: s32_reg_11_
+               (rising edge-triggered flip-flop clocked by clk)
+  Last common pin: clk
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  ---------------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (propagated)         0.00       0.00
+  s23_reg_0_/CK (QDFFP)                    0.00       0.00 r
+  s23_reg_0_/Q (QDFFP)                     0.45       0.45 f
+  add_91/U5/O (ND2P)                       0.09       0.54 r
+  add_91/U23/O (INV1)                      0.07       0.61 f
+  add_91/U1_1/CO (FA1)                     0.34       0.95 f
+  add_91/U1_2/CO (FA1)                     0.36       1.31 f
+  add_91/U1_3/CO (FA1)                     0.36       1.66 f
+  add_91/U1_4/CO (FA1)                     0.36       2.02 f
+  add_91/U1_5/CO (FA1)                     0.36       2.37 f
+  add_91/U1_6/CO (FA1)                     0.36       2.73 f
+  add_91/U1_7/CO (FA1)                     0.36       3.09 f
+  add_91/U1_8/CO (FA1)                     0.36       3.44 f
+  add_91/U1_9/CO (FA1)                     0.36       3.80 f
+  add_91/U1_10/CO (FA1)                    0.36       4.15 f
+  add_91/U1_11/S (FA1)                     0.29       4.44 f
+  add_91/U2/O (INV1S)                      0.13       4.57 r
+  add_91/U19/O (INV2)                      0.13       4.69 f
+  mult_91/U26/S (FA1S)                     0.70       5.39 r
+  mult_91/U10/S (FA1S)                     0.52       5.91 f
+  mult_91/U47/O (INV1S)                    0.14       6.05 r
+  mult_91/U48/O (INV2)                     0.08       6.13 f
+  add_96/U1_12/CO (FA1)                    0.39       6.51 f
+  add_96/U1_13/CO (FA1)                    0.36       6.87 f
+  add_96/U1_14/CO (FA1)                    0.36       7.23 f
+  add_96/U1_15/CO (FA1)                    0.36       7.58 f
+  add_96/U1_16/CO (FA1)                    0.36       7.94 f
+  add_96/U1_17/CO (FA1)                    0.36       8.29 f
+  add_96/U1_18/CO (FA1)                    0.36       8.65 f
+  add_96/U1_19/CO (FA1)                    0.36       9.01 f
+  add_96/U1_20/CO (FA1)                    0.34       9.34 f
+  add_96/U1_21/O (XOR3)                    0.31       9.65 f
+  s32_reg_11_/D (QDFFN)                    0.00       9.65 f
+  data arrival time                                   9.65
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (propagated)         0.00      10.00
+  clock reconvergence pessimism            0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  s32_reg_11_/CK (QDFFN)                              9.90 r
+  library setup time                      -0.13       9.77
+  data required time                                  9.77
+  ---------------------------------------------------------------
+  data required time                                  9.77
+  data arrival time                                  -9.65
+  ---------------------------------------------------------------
+  slack (MET)                                         0.11
+
+
+1
